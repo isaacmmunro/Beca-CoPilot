@@ -29,6 +29,16 @@
 				"-Direction",
 				"to-studio"
 			]
+		},
+		{
+			"label": "final-status-check",
+			"type": "shell",
+			"command": "& 'C:\\Users\\IM146\\AppData\\Local\\Programs\\Git\\cmd\\git.exe' -C '${workspaceFolder}' status -sb"
+		},
+		{
+			"label": "commit-task-cleanup",
+			"type": "shell",
+			"command": "& 'C:\\Users\\IM146\\AppData\\Local\\Programs\\Git\\cmd\\git.exe' -C '${workspaceFolder}' add '.vscode/tasks.json'; & 'C:\\Users\\IM146\\AppData\\Local\\Programs\\Git\\cmd\\git.exe' -C '${workspaceFolder}' commit -m 'Remove temporary execution tasks'; & 'C:\\Users\\IM146\\AppData\\Local\\Programs\\Git\\cmd\\git.exe' -C '${workspaceFolder}' push"
 		}
 	]
 }
