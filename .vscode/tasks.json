@@ -29,21 +29,6 @@
 				"-Direction",
 				"to-studio"
 			]
-		},
-		{
-			"label": "copilot-sync-from-studio-verify",
-			"type": "shell",
-			"command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\scripts\\copilot-sync.ps1\" -Direction from-studio"
-		},
-		{
-			"label": "copilot-sync-from-studio-verify2",
-			"type": "shell",
-			"command": "& '${workspaceFolder}\\scripts\\copilot-sync.ps1' -Direction from-studio"
-		},
-		{
-			"label": "copilot-sync-from-studio-verify3",
-			"type": "shell",
-			"command": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"& '${workspaceFolder}\\scripts\\copilot-sync.ps1' -Direction from-studio\""
 		}
 	]
 }
